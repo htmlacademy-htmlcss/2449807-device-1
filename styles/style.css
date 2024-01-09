@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/raleway/raleway-800.woff2") format(woff2);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/rubik/rubik-400.woff2") format(woff2);
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/rubik/rubik-700.woff2") format(woff2);
+  font-display: swap;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.body {
+  padding: 0;
+  margin: 0;
+  font-family: "Raleway", "Rubik", Arial, sans-serif;
+  background: #ffffff;
+
+}
+.container {
+  background: #ffffff;
+  margin: 0 140px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
