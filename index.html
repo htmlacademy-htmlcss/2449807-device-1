@@ -14,7 +14,7 @@
       <div class="first main-block">
         <header class="main-header">
           <a href="index.html" class="logo-link">
-            <img src="./images/icons/device-logo.svg" alt="Логотип сайта" class="logo" width="145" height="36">
+            <img src="./images/icons/device-logo.svg" alt="Логотип сайта" class="logo" width="147" height="37">
           </a>
           <form action="https://echo.htmlacademy.ru/" class="header-form" method="get">
             <input type="search" id="head-input" class="header-input" placeholder="Поиск по сайту" required>
@@ -22,15 +22,18 @@
           </form>
           <ul class="header-list-first">
             <li class="first-header-item">
-              <a href="#" class="head-item-link-log">Войти</a>
+              <a href="#" class="head-item-link-log">
+                <img class="header-logo-svg" src="./images/icons/log-icon.svg" alt="лого авторизации">Войти</a>
             </li>
           </ul>
           <ul class="header-list-second">
             <li class="second-header-item">
-              <a href="#" class="head-item-link-comp">Сравнить</a>
+              <a href="#" class="head-item-link-comp">
+                <img class="header-logo-svg comp" src="./images/icons/comp-icon.svg" alt="лого сравнить"> Сравнить</a>
             </li>
-            <li class="second-header-item">
+            <li class="second-header-item basket-item">
               <a href="#" class="head-item-link-basket">
+                <img class="basket" src="./images/icons/basket-icon.svg" alt="корзина">
                 <span class="quantity">2</span>Корзина</a>
             </li>
           </ul>
@@ -62,103 +65,116 @@
                 </li>
               </ul>
             </div>
-            <ul class="header-list-four">
-              <li class="four-list-item">
-                <a class="four-list-link" href="#">доставка</a>
-              </li>
-              <li class="four-list-item">
-                <a class="four-list-link" href="#">гарантия</a>
-              </li>
-              <li class="four-list-item">
-                <a class="four-list-link" href="#">контакты</a>
-              </li>
-            </ul>
           </div>
+          <ul class="header-list-four">
+            <li class="four-list-item">
+              <a class="four-list-link" href="#">доставка</a>
+            </li>
+            <li class="four-list-item">
+              <a class="four-list-link" href="#">гарантия</a>
+            </li>
+            <li class="four-list-item">
+              <a class="four-list-link" href="#">контакты</a>
+            </li>
+          </ul>
+
         </header>
         <main class="main">
           <button class="arrow-left"></button>
           <button class="arrow-right"></button>
-          <div class="first-slider">
-            <div class="slider">
-              <img src="./images/dron.jpg" alt="квадрокоптер" class="slide" width="560" height="560">
+          <div class="slider-container">
+            <div class="first-slider">
+              <span class="slide-number">01</span>
+              <div class="slider">
+                <img src="./images/dron.jpg" alt="квадрокоптер" class="slide" width="560" height="560">
+              </div>
+              <h2 class="slider-title">Порхает как бабочка,
+                жалит как пчела!</h2>
+              <p class="slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
+                замаскированным
+                под стандартную камеру.
+              </p>
+              <a href="#" class="slider-link">подробнее</a>
+              <ul class="slider-list">
+                <li class="slider-item">
+                  <p class="item-digit">800 м</p>
+                  <p class="item-text">Дальность полета</p>
+                </li>
+                <li class="slider-item">
+                  <p class="item-digit">50 м</p>
+                  <p class="item-text">Радиус поражения</p>
+                </li>
+              </ul>
             </div>
-            <h2 class="slider-title">Порхает как бабочка,
-              жалит как пчела!</h2>
-            <p class="slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным
-              под стандартную камеру.
-            </p>
-            <a href="#" class="slider-link">подробнее</a>
-            <ul class="slider-list">
-              <li class="slider-item">
-                <p class="item-digit">800 м</p>
-                <p class="item-text">Дальность полета</p>
-              </li>
-              <li class="slider-item">
-                <p class="item-digit">50 м</p>
-                <p class="item-text">Радиус поражения</p>
-              </li>
-            </ul>
-          </div>
-          <div class="second-slider">
-            <div class="slider">
-              <img src="./images/watch.jpg" alt="часы" class="slide" width="560" height="560">
+            <div class="second-slider">
+              <span class="slide-number">02</span>
+              <div class="slider">
+                <img src="./images/watch.jpg" alt="часы" class="slide" width="560" height="560">
+              </div>
+              <h2 class="slider-title">Худеем
+                правильно!</h2>
+              <p class="slider-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и
+                соблюдать диету.
+              </p>
+              <a href="#" class="slider-link">подробнее</a>
+              <ul class="slider-list">
+                <li class="slider-item">
+                  <p class="item-digit">48 часов</p>
+                  <p class="item-text">Без подзарядки</p>
+                </li>
+              </ul>
             </div>
-            <h2 class="slider-title">Худеем
-              правильно!</h2>
-            <p class="slider-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и
-              соблюдать диету.
-            </p>
-            <a href="#" class="slider-link">подробнее</a>
-            <ul class="slider-list">
-              <li class="slider-item">
-                <p class="item-digit">48 часов</p>
-                <p class="item-text">Без подзарядки</p>
-              </li>
-            </ul>
-          </div>
-          <div class="three-slider">
-            <div class="slider">
-              <img src="./images/stick.jpg" alt="селфи-палка" class="slide" width="560" height="560">
+            <div class="three-slider">
+              <span class="slide-number">03</span>
+              <div class="slider">
+                <img src="./images/stick.jpg" alt="селфи-палка" class="slide" width="560" height="560">
+              </div>
+              <h2 class="slider-title">Делай селфи, как Бен Стиллер! </h2>
+              <p class="slider-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!)
+                метров
+                длиной и весом всего 5 кг.
+              </p>
+              <a href="#" class="slider-link">подробнее</a>
+              <ul class="slider-list">
+                <li class="slider-item">
+                  <p class="item-digit">8,5 м</p>
+                  <p class="item-text">Длина палки</p>
+                </li>
+                <li class="slider-item">
+                  <p class="item-digit">5 кг</p>
+                  <p class="item-text">Вес палки</p>
+                </li>
+                <li class="slider-item">
+                  <p class="item-digit">Карбон</p>
+                  <p class="item-text">Материал</p>
+                </li>
+              </ul>
             </div>
-            <h2 class="slider-title">Делай селфи, как Бен Стиллер! </h2>
-            <p class="slider-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!)
-              метров
-              длиной и весом всего 5 кг.
-            </p>
-            <a href="#" class="slider-link">подробнее</a>
-            <ul class="slider-list">
-              <li class="slider-item">
-                <p class="item-digit">8,5 м</p>
-                <p class="item-text">Длина палки</p>
-              </li>
-              <li class="slider-item">
-                <p class="item-digit">5 кг</p>
-                <p class="item-text">Вес палки</p>
-              </li>
-              <li class="slider-item">
-                <p class="item-digit">Карбон</p>
-                <p class="item-text">Материал</p>
-              </li>
-            </ul>
           </div>
           <ul class="category-list">
             <li class="category-item">
-              <a href="#" class="category-item-link">Виртуальная реальность</a>
+              <a href="#" class="category-item-link">
+                <img class="category-img" src="./images/icons/glasses.svg" alt="очки">Виртуальная реальность</a>
             </li>
             <li class="category-item">
-              <a href="#" class="category-item-link">Моноподы для селфи</a>
+              <a href="#" class="category-item-link">
+                <img class="category-img" src="./images/icons/selfi-stick.svg" alt="селфи-палка">Моноподы<br> для селфи</a>
             </li>
             <li class="category-item">
-              <a href="#" class="category-item-link">Экшн-камеры</a>
+              <a href="#" class="category-item-link">
+                <img class="category-img" src="./images/icons/act-camera.svg" alt="камера">Экшн-камеры</a>
             </li>
             <li class="category-item">
-              <a href="#" class="category-item-link">Фитнес-браслеты</a>
+              <a href="#" class="category-item-link">
+                <img class="category-img" src="./images/icons/health-watch.svg" alt="браслет">Фитнес-браслеты</a>
             </li>
             <li class="category-item">
-              <a href="#" class="category-item-link">Умные часы</a>
+              <a href="#" class="category-item-link">
+                <img class="category-img" src="./images/icons/smart-watch.svg" alt="часы">Умные часы</a>
             </li>
             <li class="category-item">
-              <a href="#" class="category-item-link">Квадрокоптеры</a>
+              <a href="#" class="category-item-link">
+                <img class="category-img" src="./images/icons/copter-cat.svg" alt="квадрокоптер">Квадрокоптеры</a>
             </li>
           </ul>
           <ul class="advantages">
@@ -180,13 +196,13 @@
                 наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
             </li>
           </ul>
-          <a class="main-title-link">доставим редкий товар под заказ</a>
+          <a href="#" class="main-title-link">доставим редкий товар под заказ</a>
           <ul class="addit-list">
             <li class="addit-item">
               <h3 class="addit-title">О нас</h3>
-              <p class="addit-text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
+              <p class="addit-text">Огромный выбор гаджетов не оставит равнодушным<br> гика, который есть в каждом из нас.
               </p>
-              <p class="addit-text">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными
+              <p class="addit-text">Мы можем доставить ваш товар в самые отдалённые<br> уголки России транспортными
                 компаниями:</p>
               <ul class="second-addit-list">
                 <li class="second-addit-text">Меловые линии</li>
@@ -197,14 +213,14 @@
             </li>
             <li class="addit-item">
               <h3 class="addit-title">Контакты</h3>
-              <p class="addit-text">Вы можете забрать товар сами, заехав в наш офис.
+              <p class="addit-text">Вы можете забрать товар сами, заехав в наш офис.<br>
                 Заодно сможете проверить работоспособность покупки.</p>
               <h4 class="second-addit-title">Интернет-магазин «Девайс»</h4>
-              <p class="addit-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+              <p class="addit-text second">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
               <a href="+7 (812) 812-12-12" class="addit-tel">+7 (812) 812-12-12</a>
               <h4 class="worktime-title">Время работы</h4>
               <p class="worktime-text">пн—пт: с 10:00 до 22:00<br>сб—вс: с 10:00 до 19:00</p>
-              <a href="" class="addit-link">напишите нам</a>
+              <a href="" class="addit-link second">напишите нам</a>
             </li>
           </ul>
           <div class="subscribe-container">
@@ -223,7 +239,7 @@
         <footer class="main-footer">
           <h2 class="visually-hidden">Контакты</h2>
           <div class="f-foot-block">
-            <a href="index.html"  class="foot-logo">
+            <a href="index.html" class="foot-logo">
               <img src="./images/icons/foot-logo.svg" width="145" height="36" alt="Логотип сайта" class="foot-logo-svg">
             </a>
             <p class="address">Санкт-Петербург, набережная
