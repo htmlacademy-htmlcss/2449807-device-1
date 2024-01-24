@@ -337,6 +337,53 @@
         </div>
       </footer>
     </div>
+    <div class="modal modal-close1d">
+      <div class="modal-container">
+        <button type="button" class="modal-close-button">
+          <span class="visually-hidden">Закрыть модальное окно</span>
+        </button>
+        <h2 class="modal-title">Доставка под заказ</h2>
+        <form action="https://echo.htmlacademy.ru/" class="search-form" method="post">
+          <ul class="first-form-list">
+            <li class="first-list-item">
+              <label for="name" class="item-text">Ваше имя:</label>
+              <input type="text" class="item-input" id="name" placeholder="Введите имя">
+            </li>
+            <li class="first-list-item">
+              <label for="email" class="item-text">Ваш e-mail:</label>
+              <div class="email-item">
+                <input type="email" class="item-input email-modal-input" name="user-email" placeholder="почта" required>
+                <div class="email-message">Забавный у вас адрес</div>
+              </div>
+            </li>
+          </ul>
+          <ul class="second-form-list">
+            <li class="second-list-item">
+              <label for="wishes" class="item-text second-item-text">Что нужно привезти:</label>
+              <input type="text" class="item-input wishes-modal-input" id="wishes" placeholder="В свободной форме">
+            </li>
+            <li class="second-list-item">
+              <div class="label-info">
+                <label for="quant" class="item-text second-item-text">Количество:</label>
+                <button class="info" type="button">i</button>
+              </div>
+              <div class="quant-input">
+                <button class="left-item-button" type="button">
+                  <span class="visually-hidden">Уменьшить</span>
+                </button>
+                <input type="number" value="1" class="item-input value-input" id="quant">
+                <button class="right-item-button" type="button">
+                  <span class="visually-hidden">Увеличить</span>
+                </button>
+              </div>
+            </li>
+          </ul>
+          <a href="#" class="modal-link">отправить</a>
+          </fieldset>
+
+        </form>
+      </div>
+    </div>
   </body>
 
 </html>
