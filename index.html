@@ -1,12 +1,389 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="shortcut icon" type="image/png" sizes="16x16" href="./images/icons/fav.png">
+    <link rel="stylesheet" href="./styles/style.css" class="styles">
   </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+  <body class="body">
+    <div class="container">
+      <h1 class="visually-hidden">Главная страница</h1>
+      <header class="main-header">
+        <a href="index.html" class="logo-link">
+          <img src="./images/icons/device-logo.svg" alt="Логотип сайта" class="logo" width="147" height="37">
+        </a>
+        <form action="https://echo.htmlacademy.ru/" class="header-form" method="get">
+          <input type="search" id="head-input" class="header-input" placeholder="Поиск по сайту" required>
+          <button class="header-button" for="head-input" type="submit">Найти</button>
+        </form>
+        <ul class="header-list-first">
+          <li class="first-header-item">
+            <a href="#" class="head-item-link-log">Войти</a>
+          </li>
+        </ul>
+        <ul class="header-list-second">
+          <li class="second-header-item">
+            <a href="#" class="head-item-link-comp">Сравнить</a>
+          </li>
+          <li class="second-header-item basket-item">
+            <a href="#" class="head-item-link-basket">
+              <span class="quantity">2</span>Корзина</a>
+            <div class="popover-basket">
+              <ul class="popover-list">
+                <li class="popover-item">
+                  <a href="" class="popover-item-link amat-stick">Любительская<br> селфи-палка</a>
+                  <button class="popover-button">
+                    <span class="visually-hidden">удалить</span>
+                  </button>
+                </li>
+                <li class="popover-item second-popover-item">
+                  <a href="" class="popover-item-link pro-stick">Профессиональная<br> селфи-палка</a>
+                  <button class="popover-button second-button">
+                    <span class="visually-hidden">удалить</span>
+                  </button>
+                </li>
+              </ul>
+              <ul class="popover-list-second">
+                <li class="popover-text-item">
+                  <p class="popover-text">Товаров: 2</p>
+                </li>
+                <li class="popover-text-item">
+                  <p class="popover-text">Сумма: 2000 ₽</p>
+                </li>
+              </ul>
+              <a href="" class="popover-link-busket">Открыть корзину</a>
+            </div>
+          </li>
+        </ul>
+        <div class="header-list-three">
+          <a href="#" class="drop-header-link">каталог товаров</a>
+          <div class="drop-list">
+            <ul class="first-drop-list">
+              <li class="drop-item">
+                <a href="#" class="drop-link">Виртуальная реальность</a>
+              </li>
+              <li class="drop-item">
+                <a href="#" class="drop-link">Моноподы для cелфи</a>
+              </li>
+              <li class="drop-item">
+                <a href="#" class="drop-link">Экшн-камеры</a>
+              </li>
+            </ul>
+            <ul class="second-drop-list">
+              <li class="drop-item">
+                <a href="#" class="drop-link">Фитнес-браслеты</a>
+              </li>
+              <li class="drop-item">
+                <a href="#" class="drop-link">Умные часы</a>
+              </li>
+            </ul>
+            <ul class="three-drop-list">
+              <li class="drop-item">
+                <a href="#" class="drop-link">Квадрокоптеры</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <ul class="header-list-four">
+          <li class="four-list-item">
+            <a class="four-list-link" href="#">доставка</a>
+          </li>
+          <li class="four-list-item">
+            <a class="four-list-link" href="#">гарантия</a>
+          </li>
+          <li class="four-list-item">
+            <a class="four-list-link" href="#">контакты</a>
+          </li>
+        </ul>
 
+      </header>
+      <main class="main">
+        <section class="welcome">
+          <button class="arrow-prev slider-arrow">
+            <span class="visually-hidden">предыдущий слайд</span>
+          </button>
+          <button class="arrow-next slider-arrow">
+            <span class="visually-hidden">следующий слайд</span>
+          </button>
+          <div class="slider-frame">
+            <ul class="slider-list">
+              <li class="slider-screen slider-screen-active">
+                <span class="slide-number">01</span>
+                <div class="slide-img">
+                  <img src="./images/dron.jpg" alt="квадрокоптер" class="slide" width="560" height="560">
+                </div>
+                <div class="text-slider-block">
+                  <h2 class="slider-title">Порхает как бабочка,
+                    жалит как пчела!</h2>
+                  <p class="slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
+                    замаскированным
+                    под стандартную камеру.
+                  </p>
+                  <a href="#" class="slider-link substrate">подробнее</a>
+                  <ul class="slider-description">
+                    <li class="slider-item-description">
+                      <p class="item-digit">800 м</p>
+                      <p class="item-text">Дальность полета</p>
+                    </li>
+                    <li class="slider-item-description">
+                      <p class="item-digit">50 м</p>
+                      <p class="item-text">Радиус поражения</p>
+                    </li>
+                  </ul>
+                  <input type="radio" name="bullet-1" id="slide-first" class="slider-bullet" checked />
+                </div>
+              </li>
+              <li class="slider-screen">
+                <span class="slide-number">02</span>
+                <div class="slide-img">
+                  <img src="./images/watch.jpg" alt="часы" class="slide" width="560" height="560">
+                </div>
+                <div class="text-slider-block">
+                  <h2 class="slider-title">Худеем
+                    правильно!</h2>
+                  <p class="slider-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и
+                    соблюдать диету.
+                  </p>
+                  <a href="#" class="slider-link substrate">подробнее</a>
+                  <ul class="slider-description">
+                    <li class="slider-item-description">
+                      <p class="item-digit">48 часов</p>
+                      <p class="item-text">Без подзарядки</p>
+                    </li>
+                  </ul>
+                </div>
+                <input type="radio" name="bullet-2" id="slide-second" class="slider-bullet" />
+              </li>
+              <li class="slider-screen">
+                <span class="slide-number">03</span>
+                <div class="slide-img">
+                  <img src="./images/stick.jpg" alt="селфи-палка" class="slide" width="560" height="560">
+                </div>
+                <div class="text-slider-block">
+                  <h2 class="slider-title">Делай селфи, как Бен Стиллер! </h2>
+                  <p class="slider-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!)
+                    метров
+                    длиной и весом всего 5 кг.
+                  </p>
+                  <a href="#" class="slider-link substrate">подробнее</a>
+                  <ul class="slider-description">
+                    <li class="slider-item-description">
+                      <p class="item-digit">8,5 м</p>
+                      <p class="item-text">Длина палки</p>
+                    </li>
+                    <li class="slider-item-description">
+                      <p class="item-digit">5 кг</p>
+                      <p class="item-text">Вес палки</p>
+                    </li>
+                    <li class="slider-item-description">
+                      <p class="item-digit">Карбон</p>
+                      <p class="item-text">Материал</p>
+                    </li>
+                  </ul>
+                </div>
+                <input type="radio" name="bullet-3" id="slide-three" class="slider-bullet" />
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="category">
+          <ul class="category-list">
+            <li class="category-item">
+              <a href="#" class="category-item-link link-glasses">Виртуальная реальность</a>
+            </li>
+            <li class="category-item">
+              <a href="#" class="category-item-link link-selfi-stick">Моноподы<br> для селфи</a>
+            </li>
+            <li class="category-item">
+              <a href="#" class="category-item-link link-act-camera">Экшн-камеры</a>
+            </li>
+            <li class="category-item">
+              <a href="#" class="category-item-link link-health-watch">Фитнес-браслеты</a>
+            </li>
+            <li class="category-item">
+              <a href="#" class="category-item-link link-smart-watch">Умные часы</a>
+            </li>
+            <li class="category-item">
+              <a href="#" class="category-item-link link-copter-cat ">Квадрокоптеры</a>
+            </li>
+          </ul>
+        </section>
+        <section class="advantages-block">
+          <div class="advantages-container">
+            <ul class="advantages-legend">
+              <li class="advantages-legend-item">
+                <a href="#" class="legend-item-link active substrate">Доставка</a>
+              </li>
+              <li class="advantages-legend-item">
+                <a href="#" class="legend-item-link substrate">Гарантия</a>
+              </li>
+              <li class="advantages-legend-item">
+                <a href="#" class="legend-item-link substrate">Кредит</a>
+              </li>
+            </ul>
+            <div class="advantages-slider">
+              <ul class="advantages">
+                <li class="advantages-item advantages-item-active">
+                  <h3 class="advantages-title">Доставка</h3>
+                  <p class="advantages-text">Мы с удовольствием доставим ваш товар прямо<br>
+                    к вашему подъезду совершенно бесплатно! Ведь
+                    мы неплохо заработаем, поднимая его на ваш этаж.</p>
+                </li>
+                <li class="advantages-item">
+                  <h3 class="advantages-title">Гарантия</h3>
+                  <p class="advantages-text">Если из-за возгорания купленного у нас товара у вас
+                    сгорит дом — не переживайте, мы выдадим вам новый.
+                    Товар, не дом, конечно же.</p>
+                </li>
+                <li class="advantages-item">
+                  <h3 class="advantages-title">Кредит</h3>
+                  <p class="advantages-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас
+                    наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <a href="#" class="main-title-link">доставим редкий товар под заказ</a>
+        <section class="addit-list">
+          <section class="addit-item">
+            <h3 class="addit-title">О нас</h3>
+            <p class="addit-text">Огромный выбор гаджетов не оставит равнодушным<br> гика, который есть в каждом из нас.
+            </p>
+            <p class="addit-text">Мы можем доставить ваш товар в самые отдалённые<br> уголки России транспортными
+              компаниями:</p>
+            <ul class="second-addit-list">
+              <li class="second-addit-text">Меловые линии</li>
+              <li class="second-addit-text">СДИК</li>
+              <li class="second-addit-text">ТоксБерри</li>
+            </ul>
+            <a href="" class="addit-link">подробнее о нас</a>
+          </section>
+          <section class="addit-item">
+            <h3 class="addit-title">Контакты</h3>
+            <p class="addit-text">Вы можете забрать товар сами, заехав в наш офис.<br>
+              Заодно сможете проверить работоспособность покупки.</p>
+            <h4 class="second-addit-title">Интернет-магазин «Девайс»</h4>
+            <address class="addit-text second">Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
+            <a href="tel:+78128121212" class="addit-tel">+7 (812) 812-12-12</a>
+            <h4 class="worktime-title">Время работы</h4>
+            <p class="worktime-text">пн—пт: с 10:00 до 22:00<br>сб—вс: с 10:00 до 19:00</p>
+            <a href="" class="addit-link second">напишите нам</a>
+          </section>
+        </section>
+        <section class="subscribe-container">
+          <div class="subscribe-block">
+            <h2 class="sub-title">Подпишитесь
+              на рассылку</h2>
+            <p class="sub-text">Еженедельный дайджест с обзорами новинок,<br>
+              длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+            <form action="https://echo.htmlacademy.ru/" class="sub-form" method="post">
+              <input type="email" class="sub-input" name="user-email" placeholder="Ваш e-mail" required>
+              <button class="sub-button" type="submit">подписаться</button>
+              <span class="sub-form-text">Это бесплатно</span>
+            </form>
+          </div>
+        </section>
+
+      </main>
+      <footer class="footer">
+        <div class="main-footer">
+          <h2 class="visually-hidden">Контакты</h2>
+          <div class="f-foot-block">
+            <a href="index.html" class="foot-logo">
+              <img src="./images/icons/foot-logo.svg" width="145" height="36" alt="Логотип сайта" class="foot-logo-svg">
+            </a>
+            <address class="address">Санкт-Петербург, набережная
+              реки Карповки, 5, литера П.</address>
+          </div>
+          <div class="t-foot-block">
+            <ul class="footer-list">
+              <li class="footer-item">
+                <a href="" class="footer-item-link">доставка</a>
+              </li>
+              <li class="footer-item">
+                <a href="" class="footer-item-link">гарантия</a>
+              </li>
+              <li class="footer-item">
+                <a href="" class="footer-item-link">контакты</a>
+              </li>
+            </ul>
+            <ul class="socials">
+              <li class="social-item">
+                <a href="https://t.me/htmlacademy" class="social-link telegram">
+                  <span class="visually-hidden">Telegram</span>
+                </a>
+              </li>
+              <li class="social-item">
+                <a href="https://www.youtube.com/user/htmlacademyru" class="social-link youtube">
+                  <span class="visually-hidden">Youtube</span>
+                </a>
+              </li>
+              <li class="social-item">
+                <a href="https://twitter.com/htmlacademy_ru" class="social-link twitter">
+                  <span class="visually-hidden">Twitter</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="th-foot-block">
+            <a class="footer-tel" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
+            <a href="https://htmlacademy.ru" class="footer-logo">
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="modal modal-close1d">
+      <div class="modal-container">
+        <button type="button" class="modal-close-button">
+          <span class="visually-hidden">Закрыть модальное окно</span>
+        </button>
+        <h2 class="modal-title">Доставка под заказ</h2>
+        <form action="https://echo.htmlacademy.ru/" class="search-form" method="post">
+          <ul class="first-form-list">
+            <li class="first-list-item">
+              <label for="name" class="item-text">Ваше имя:</label>
+              <input type="text" class="item-input" id="name" placeholder="Введите имя">
+            </li>
+            <li class="first-list-item">
+              <label for="email" class="item-text">Ваш e-mail:</label>
+              <div class="email-item">
+                <input type="email" class="item-input email-modal-input" name="user-email" placeholder="почта" required>
+                <div class="email-message">Забавный у вас адрес</div>
+              </div>
+            </li>
+          </ul>
+          <ul class="second-form-list">
+            <li class="second-list-item">
+              <label for="wishes" class="item-text second-item-text">Что нужно привезти:</label>
+              <input type="text" class="item-input wishes-modal-input" id="wishes" placeholder="В свободной форме">
+            </li>
+            <li class="second-list-item">
+              <div class="label-info">
+                <label for="quant" class="item-text second-item-text">Количество:</label>
+                <button class="info" type="button">i</button>
+              </div>
+              <div class="quant-input">
+                <button class="left-item-button" type="button">
+                  <span class="visually-hidden">Уменьшить</span>
+                </button>
+                <input type="number" value="1" class="item-input value-input" id="quant">
+                <button class="right-item-button" type="button">
+                  <span class="visually-hidden">Увеличить</span>
+                </button>
+              </div>
+            </li>
+          </ul>
+          <a href="#" class="modal-link">отправить</a>
+          </fieldset>
+
+        </form>
+      </div>
+    </div>
   </body>
+
 </html>
